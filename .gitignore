@@ -1,0 +1,11 @@
+#object files
+*.o
+build
+*.swp
+*.cflags
+*.config
+*.creator
+*.cxxflags
+*.files
+*.includes
+*.creator.user
