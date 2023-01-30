@@ -16,7 +16,7 @@ F_CPU=8000000
 
 # Fuses
 L_FUSE=0xFF
-H_FUSE=0xC9
+H_FUSE=0xD9
 E_FUSE=0xFF
 
 # Progammer
@@ -41,6 +41,7 @@ VPATH = src
 # List of all sources (only source-files)
 SOURCES  = main.c
 SOURCES += kbd.c
+SOURCES += uart.c
 
 ################################################################################
 # Building Object files 

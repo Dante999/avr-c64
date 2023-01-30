@@ -1,7 +1,7 @@
 #include <avr/io.h>
 
 #include "kbd.h"
-
+#include "uart.h"
 
 static void print_uart(const char *s)
 {
@@ -14,10 +14,11 @@ int main(void)
 
 
 	kbd_init(&kbd_config);
+	uart_init();
 
 	while(1)
 	{
-		// do nothing
+		uart_puts("hello world");
 	}
 
 	return 0;
